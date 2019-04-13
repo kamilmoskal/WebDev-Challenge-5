@@ -90,6 +90,8 @@ workBtns.forEach(function(btn) {
         if (item.getAttribute("data-category").includes(category) ||
         item.getAttribute("data-category") === category) {
           item.style.display = "block";
+          item.classList.add('aos-init');
+          item.classList.add('aos-animate');
         } else {
           item.style.display = "none";
         }
